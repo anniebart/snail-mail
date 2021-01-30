@@ -11,3 +11,14 @@ I have friends who work in technology (engineering/etc) as well as those who do 
 So why not use and subvert technology by creating a slower communication app? Similar to a direct message platform, users can find other users, write a message and then send it over. But unlike traditional direct messages platforms, the message will not be sent immediately, but rather in a timeframe more akin to that of sending physical mail. 
 
 Is this useful? Probably not, at least in a practical sense. But I do see the value in reimagining how communication can exist - particularly questioning the preconceptions we have around digital communication. 
+
+
+THINGS TO DO:
+* [] finish implementing local authentication
+* [] add O-auth authentication
+* [] add user query to new message component
+* [] add content to homepage
+* [] add GET method to inbox for displaying messages
+* [] add POST method to sending messages
+* [] more configuration of Vuex state
+* [] 

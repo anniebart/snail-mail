@@ -21,4 +21,5 @@ THINGS TO DO:
 * [] add GET method to inbox for displaying messages
 * [] add POST method to sending messages
 * [] more configuration of Vuex state
+* [] adding routes to server
 * [] 

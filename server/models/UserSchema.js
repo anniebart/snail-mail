@@ -12,7 +12,9 @@ password: {
         type: String,
         required: true,
         unique: false
-    }
+    },
+messagesReceived: [],
+messagesSent: []
     
 });
 

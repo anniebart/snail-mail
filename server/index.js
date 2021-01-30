@@ -25,7 +25,9 @@ app.use(cors());
 app.use(bodyParser.json())
 
 
-
+app.get('/register', async(req, res)=>{
+    
+})
 
 app.listen(PORT, ()=>{
     console.log(`server is running on ${PORT}`)

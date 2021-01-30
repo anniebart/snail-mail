@@ -1,6 +1,6 @@
 <template>
   <div id="signup">
-      <register-form :title="title" :buttonName="buttonName">
+      <register-form :title="title" :buttonName="buttonName" :buttonAction='registerUser'>
           <label for="email">Email</label>
           <input name="email" v-model="email" type="email" placeholder="example@email.com">
           <label for="password">Password</label>
@@ -23,7 +23,8 @@ data(){
        email: '',
        password: '',
        title: 'Sign Up',
-       buttonName: 'sign up'
+       buttonName: 'sign up',
+       buttonAction: function(){}
     }
 },
 methods: {

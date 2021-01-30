@@ -2,7 +2,7 @@
   <div id="form-box">
           <h1>{{title}}</h1>
             <slot> </slot>
-          <button>{{buttonName}}</button>
+          <button @click='buttonAction'>{{buttonName}}</button>
       </div>
 </template>
 
@@ -16,7 +16,8 @@ data(){
 },
 props: {
     title: String,
-    buttonName: String
+    buttonName: String,
+    buttonAction: Function
 },
 
 

@@ -13,13 +13,4 @@ So why not use and subvert technology by creating a slower communication app? Si
 Is this useful? Probably not, at least in a practical sense. But I do see the value in reimagining how communication can exist - particularly questioning the preconceptions we have around digital communication. 
 
 
-THINGS TO DO:
-* [] finish implementing local authentication
-* [] add O-auth authentication
-* [] add user query to new message component
-* [] add content to homepage
-* [] add GET method to inbox for displaying messages
-* [] add POST method to sending messages
-* [] more configuration of Vuex state
-* [] adding routes to server
-* [] 
+For seeing the progress in real time, please visit my GitHub project [page](https://github.com/users/anniebart/projects/3). 

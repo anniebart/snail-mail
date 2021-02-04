@@ -6,14 +6,9 @@ sendingUser: {
     type: String,
     required: true
 },
-receivingUser: {
-    type: String,
-    require: true
-},
-
+receivingUsers: [],
 dateCreated: {
     type: Date
-
 },
 message: {
     type: String
@@ -23,8 +18,14 @@ timeDelay: {
 },
 dateSent: {
     type: Date
-}
+},
+read: false,
+archived: false,
+attachments: [],
+
 
 
 
 })
+
+module.exports = mongoose.model('Message', MessageSchema)

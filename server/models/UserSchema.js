@@ -14,7 +14,9 @@ password: {
         unique: false
     },
 messagesReceived: [],
-messagesSent: []
+messagesSent: [],
+contacts: [],
+archivedMessages :[]
     
 });
 

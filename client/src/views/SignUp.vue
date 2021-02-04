@@ -4,7 +4,7 @@
           <label for="email">Email</label>
           <input name="email" v-model="email" type="email" placeholder="example@email.com">
           <label for="password">Password</label>
-          <input type="password" name="password" placeholder="password">
+          <input type="password" name="password" placeholder="password" v-model="password">
       </register-form>
   </div>
 </template>
@@ -39,7 +39,7 @@ methods: {
            
             this.$store.dispatch('setUser', response.data.user);
             this.$store.dispatch('setToken', response.data.token);
-              this.$router.push({name:'Secret'});
+            this.$router.push({name:'User'});
            }
            catch(err){
                this.error = err.response.data.error

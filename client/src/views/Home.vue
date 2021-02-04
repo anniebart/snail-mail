@@ -1,11 +1,16 @@
 <template>
   <div class="home">
     <div class="hero">
-      <img class="snail" src="../assets/SNAIL.svg">
-      <h1>bringing communication back to a snail’s pace</h1>
+      <!-- <img class="snail" src="../assets/SNAIL.svg"> -->
+      <img class="hero-img" src="../assets/Hero-snail.png">
+      <div class="hero-text">
+        <h1>bringing communication back to a snail’s pace</h1>
+        <router-link to='/signup'><button>sign up</button></router-link>
+      </div>
+      
     </div>
     <section>
-      
+
     </section>
   </div>
 </template>
@@ -43,16 +48,26 @@ body {
 h1 {
   max-width: 30vw;
   color: #1B2A39;
+   font-weight: 700;
+  
+}
+.hero-text {
+  margin-right: 10%;
 }
 
 .hero {
   width: 100vw;
   overflow: hidden;
-  height: calc(100vh - 118px);
-  background-color: #9FBCC1;
+  height: calc(100vh - 70px);
+  background-color: #fff;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+}
+
+.hero-img {
+ height: 50vw;
+max-height: 80%;
 }
 .snail {
 height: 80px;
@@ -62,5 +77,14 @@ height: 80px;
   padding: 0;
   margin: 0;
   animation: snailPace 25s infinite linear forwards;
+}
+button {
+  font-size: 32px;
+}
+
+@media (max-width: 760px){
+  h1 {
+    font-size: 24px;
+  }
 }
 </style>

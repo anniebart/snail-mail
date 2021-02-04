@@ -4,6 +4,7 @@ const PORT = 8081 || process.env.PORT
 const mongoose = require('mongoose');
 const cors = require('cors');
 const bodyParser = require('body-parser');
+const {register, login} = require('./controllers/AuthenticationController')
 
 mongoose.connect('mongodb://localhost:27017/snail-mail', {
     useNewUrlParser: true,
@@ -25,9 +26,10 @@ app.use(cors());
 app.use(bodyParser.json())
 
 
-app.get('/register', async(req, res)=>{
-    
-})
+app.post('/signup', register);
+
+
+
 
 app.listen(PORT, ()=>{
     console.log(`server is running on ${PORT}`)
